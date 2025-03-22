@@ -3,7 +3,7 @@
       {
         "AllowedOrigins": [
           "http://localhost:3000",
-          "https://majestic-dango-9be14b.netlify.app/"
+          "https://manirecord.netlify.app/"
         ],
         "AllowedMethods": [
           "GET",
