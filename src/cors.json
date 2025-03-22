@@ -2,7 +2,8 @@
     "CORSRules": [
       {
         "AllowedOrigins": [
-          "http://localhost:3000"
+          "http://localhost:3000",
+          "https://majestic-dango-9be14b.netlify.app/"
         ],
         "AllowedMethods": [
           "GET",
