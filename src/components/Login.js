@@ -35,7 +35,7 @@ const Login = () => {
         {error && <p className="text-danger text-center">{error}</p>}
 
         <div className="mb-3">
-          <label className="form-label">Email / UserName</label>
+          <label className="form-label">Email / UserNa</label>
           <input
             type="email"
             className="form-control"
