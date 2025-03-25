@@ -131,13 +131,11 @@ export default function AudioRecorder() {
     setPaused(false);
     toast.info("Audio cleared");
   
-    // Clear the waveform canvas
     if (canvasRef.current) {
       const ctx = canvasRef.current.getContext("2d");
       ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
     }
   
-    // Properly close and reset the AudioContext
     if (audioContextRef.current) {
       if (audioContextRef.current.state !== "closed") {
         audioContextRef.current.close().then(() => {
