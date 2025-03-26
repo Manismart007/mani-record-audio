@@ -149,9 +149,13 @@ export default function AudioRecorder() {
 
   return (
     <div className="container mt-5 text-center">
-      <div className="mb-3">
-        <canvas ref={canvasRef} width="400" height="100" className="border rounded shadow"></canvas>
-      </div>
+<div className="d-flex justify-content-center align-items-center">
+  <div className="col-12 col-md-8 col-lg-6">
+    <canvas ref={canvasRef} className="border rounded shadow w-100" style={{ height: "100px" }}></canvas>
+  </div>
+</div>
+
+
       <p className="lead">Recording Time: {timer}s</p>
       <div className="btn-group" role="group">
         <button onClick={toggleRecording} className={`btn ${recording ? "btn-danger" : "btn-success"} btn-lg`}>
